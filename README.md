@@ -1,9 +1,60 @@
-**This repo is supposed to be used as config by NvChad users!**
+# Neovim Lazy Config
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
+My first sec config for neovim from scratch.
 
-# Credits
+## Requirments
 
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+- Neovim >= 0.9.0 (needs to be built with LuaJIT)
+- Git >= 2.19.0 (for partial clones support)
+- a Nerd Font(v3.0 or greater) (optional, but needed to display some icons)
+- a C compiler for nvim-treesitter.
+- ripgrep for telescope plugins.
+
+## Installation
+
+### Windows
+
+- Make backup for current Neovim file.
+
+```bash
+# required
+Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak
+
+# optional but recommended
+Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
+```
+
+- Clone the project
+
+```bash
+https://github.com/Raditya808/light-nvim-config $env:LOCALAPPDATA\nvim
+```
+
+### Linux
+
+- create backup for old config
+
+```bash
+# required
+mv ~/.config/nvim{,.bak}
+
+# optional but recommended
+mv ~/.local/share/nvim{,.bak}
+mv ~/.local/state/nvim{,.bak}
+mv ~/.cache/nvim{,.bak}
+```
+
+- Git clone github repo
+
+```bash
+https://github.com/Raditya808/light-nvim-config ~/.config/nvim
+```
+
+- Start Neovim
+
+```bash
+nvim
+```
+
+.
+
