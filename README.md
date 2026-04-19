@@ -1,6 +1,6 @@
 # Neovim Lazy Config
 
-My first third config for neovim from scratch.
+My third config for neovim from scratch.
 
 ## Requirments
 
